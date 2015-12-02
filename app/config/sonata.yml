@@ -1,2 +1,3 @@
 imports:
     - { resource: sonata/block.yml }
+    - { resource: sonata/user.yml }
