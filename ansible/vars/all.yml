@@ -8,12 +8,12 @@ server:
     packages: [git, curl]
 vagrant_local:
     install: '1'
-    vm: { base_box: trusty64, hostname: symfony.dev, ip: 192.168.33.99, memory: '1024', sharedfolder: ./, useVagrantCloud: '1', syncType: nfs }
+    vm: { base_box: trusty64, hostname: sonata.dev, ip: 192.168.33.99, memory: '1024', sharedfolder: ./, useVagrantCloud: '1', syncType: nfs }
 nginx:
     install: '1'
     docroot: /vagrant/web
     docindex: app_dev.php
-    servername: symfony.dev
+    servername: sonata.dev
 mysql:
     install: '1'
     root_password: ''
