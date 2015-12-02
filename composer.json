@@ -1,8 +1,8 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "sonata/standard-edition",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "The \"Sonata Standard Edition\" distribution",
     "autoload": {
         "psr-4": { "": "src/" }
     },
