@@ -5,3 +5,7 @@ app:
 _admin:
     resource: routing/admin.yml
     prefix: /admin
+
+_user:
+    resource: routing/user.yml
+    prefix: /user

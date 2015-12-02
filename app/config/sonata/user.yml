@@ -1,0 +1,18 @@
+sonata_user:
+    security_acl: true
+    manager_type: orm
+
+    class:
+        user: AppBundle\Entity\User\User
+        group: AppBundle\Entity\User\Group
+
+fos_user:
+    db_driver: orm
+    firewall_name: main
+    use_listener: true
+    user_class: AppBundle\Entity\User\User
+    group:
+        group_class: AppBundle\Entity\User\Group
+        group_manager: sonata.user.orm.group_manager
+    service:
+        user_manager: sonata.user.orm.user_manager

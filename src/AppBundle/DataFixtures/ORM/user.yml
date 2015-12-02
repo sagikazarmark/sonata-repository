@@ -1,4 +1,18 @@
-AppBundle\Entity\User:
-    user1:
+AppBundle\Entity\User\User:
+    admin:
+        username: admin
+        email: admin@example.com
+        plainPassword: admin
+        roles: [ROLE_SUPER_ADMIN]
+        enabled: true
+        locked: false
+        firstname: Admin
+        lastname: User
+    fabien:
         username: fabien
-        name: Fabien Potencier
+        email: fabien@symfony.com
+        plainPassword: potencier
+        enabled: true
+        locked: false
+        firstname: Fabien
+        lastname: Potencier
