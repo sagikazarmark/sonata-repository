@@ -20,6 +20,10 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
         "doctrine/doctrine-migrations-bundle": "^1.0",
+        "sonata-project/admin-bundle": "~2.4@dev",
+        "sonata-project/doctrine-orm-admin-bundle": "~2.4@dev",
+        "sonata-project/block-bundle": "~2.4@dev",
+        "knplabs/knp-menu-bundle": "^2.1@dev",
         "lexik/maintenance-bundle": "^2.0",
         "halleck45/phpmetrics-collector-bundle": "^0.0.1",
         "liip/monitor-bundle": "^2.1"
