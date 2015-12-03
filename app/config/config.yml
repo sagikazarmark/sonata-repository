@@ -39,6 +39,7 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
 
 # Doctrine Configuration
 doctrine:
@@ -94,3 +95,14 @@ liip_monitor:
     checks:
         security_advisory:
             lock_file: '%kernel.root_dir%/../composer.lock'
+
+# FOS Rest Configuration
+fos_rest:
+    param_fetcher_listener: true
+    body_listener:          true
+    format_listener:        true
+    view:
+        view_response_listener: force
+    body_converter:
+        enabled: true
+        validate: true
