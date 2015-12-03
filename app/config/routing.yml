@@ -9,3 +9,7 @@ _admin:
 _user:
     resource: routing/user.yml
     prefix: /user
+
+_api:
+    resource: routing/api.yml
+    prefix: /api

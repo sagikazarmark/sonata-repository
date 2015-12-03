@@ -39,6 +39,7 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
 
 # Doctrine Configuration
 doctrine:
@@ -88,3 +89,14 @@ lexik_maintenance:
     driver:
         class: Lexik\Bundle\MaintenanceBundle\Drivers\FileDriver
         options: {file_path: %kernel.storage_dir%/var/maintenance_lock}
+
+# FOS Rest Configuration
+fos_rest:
+    param_fetcher_listener: true
+    body_listener:          true
+    format_listener:        true
+    view:
+        view_response_listener: force
+    body_converter:
+        enabled: true
+        validate: true
