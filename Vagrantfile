@@ -25,21 +25,19 @@ end
 Vagrant.configure("2") do |config|
 
     config.vm.provider :virtualbox do |v|
-        v.name = "sonata.dev"
+        v.name = "symfony.dev"
         v.customize [
             "modifyvm", :id,
-            "--name", "sonata.dev",
+            "--name", "symfony.dev",
             "--memory", 1024,
             "--natdnshostresolver1", "on",
             "--cpus", 1,
         ]
     end
 
-    config.vm.hostname = "sonata.dev"
-
     config.vm.box = "ubuntu/trusty64"
 
-    config.vm.network :private_network, ip: "192.168.33.98"
+    config.vm.network :private_network, ip: "192.168.33.99"
     config.ssh.forward_agent = true
 
     # If ansible is in your path it will provision from your HOST machine
@@ -51,10 +49,12 @@ Vagrant.configure("2") do |config|
             ansible.limit = 'all'
         end
     else
-        config.vm.provision :shell, path: "ansible/windows.sh", args: ["sonata.dev"]
+        config.vm.provision :shell, path: "ansible/windows.sh", args: ["symfony.dev"]
     end
 
     config.vm.synced_folder "./", "/vagrant", type: "nfs"
+
+    config.vm.hostname = "symfony.dev"
 
     # Hostmanager adds the VM hostname to your hosts file
     if Vagrant.has_plugin?("vagrant-hostmanager")
