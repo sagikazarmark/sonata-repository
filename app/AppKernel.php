@@ -21,20 +21,20 @@ class AppKernel extends Kernel
             new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-            new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
+//            new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
 
             // Sonata Admin
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
 
             // Sonata User handling
-            new FOS\UserBundle\FOSUserBundle(),
-            new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
+//            new FOS\UserBundle\FOSUserBundle(),
+//            new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
 
             // REST API dependencies
-            new JMS\SerializerBundle\JMSSerializerBundle(),
-            new FOS\RestBundle\FOSRestBundle(),
-            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
+//            new JMS\SerializerBundle\JMSSerializerBundle(),
+//            new FOS\RestBundle\FOSRestBundle(),
+//            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
 
             new Lexik\Bundle\MaintenanceBundle\LexikMaintenanceBundle(),
             new Liip\MonitorBundle\LiipMonitorBundle(),
