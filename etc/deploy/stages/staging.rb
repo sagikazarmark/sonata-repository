@@ -1,1 +1,3 @@
-server "staging.sonata.com", user: "fabien", roles: [:app, :web]
+server "staging.sonata.webplates.xyz", user: "webplates", roles: [:app, :db, :web]
+
+after "deploy:updated", "doctrine:migrations:migrate"
