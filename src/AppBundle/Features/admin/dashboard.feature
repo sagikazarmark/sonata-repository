@@ -5,6 +5,7 @@ Feature: Access dashboard
 
 
     Scenario: Access dashboard
-        Given I am authenticated as "admin" with password "admin"
-        When I go to "/admin"
+        Given I am on "/admin"
+        When I fill in "username" with "admin"
+        And I fill in "password" with "admin"
         Then I should see "Sonata Admin"

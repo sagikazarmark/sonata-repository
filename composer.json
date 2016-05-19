@@ -21,9 +21,10 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "^2.0",
         "doctrine/doctrine-migrations-bundle": "^1.0",
-        "sonata-project/doctrine-orm-admin-bundle": "^3.0",
         "lexik/maintenance-bundle": "^2.0",
-        "liip/monitor-bundle": "^2.3"
+        "liip/monitor-bundle": "^2.3",
+        "sonata-project/doctrine-orm-admin-bundle": "^3.0",
+        "sonata-project/user-bundle": "^3.0"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

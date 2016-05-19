@@ -1,5 +1,5 @@
-#parameters:
-#    security.acl.permission.map.class: Sonata\AdminBundle\Security\Acl\Permission\AdminPermissionMap
+parameters:
+    security.acl.permission.map.class: Sonata\AdminBundle\Security\Acl\Permission\AdminPermissionMap
 
 # To get started with security, check out the documentation:
 # http://symfony.com/doc/current/book/security.html
@@ -18,17 +18,8 @@ security:
 
     # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
     providers:
-#        fos_userbundle:
-#            id: fos_user.user_manager
-        in_memory:
-            memory:
-                users:
-                    admin:
-                        password: admin
-                        roles: 'ROLE_SUPER_ADMIN'
-                    fabien:
-                        password: potencier
-                        roles: 'ROLE_USER'
+        fos_userbundle:
+            id: fos_user.user_manager
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -40,23 +31,23 @@ security:
             http_basic: ~
             pattern: /admin(.*)
             context: user
-#            form_login:
-#                provider: fos_userbundle
-#                login_path: /admin/login
-#                check_path: /admin/login_check
-#            logout:
-#                path: /admin/logout
+            form_login:
+                provider: fos_userbundle
+                login_path: /admin/login
+                check_path: /admin/login_check
+            logout:
+                path: /admin/logout
             anonymous: true
 
         main:
             pattern: ^/
             context: user
-#            form_login:
-#                provider: fos_userbundle
-#                login_path: /user/login
-#                check_path: /user/login_check
-#            logout:
-#                path: /user/logout
+            form_login:
+                provider: fos_userbundle
+                login_path: /user/login
+                check_path: /user/login_check
+            logout:
+                path: /user/logout
             anonymous: true
 
     access_control:
