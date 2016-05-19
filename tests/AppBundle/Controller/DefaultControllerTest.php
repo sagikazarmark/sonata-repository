@@ -2,7 +2,7 @@
 
 namespace Tests\AppBundle\Controller;
 
-use AppBundle\Entity\User;
+use AppBundle\Entity\User\User;
 use Liip\FunctionalTestBundle\Test\WebTestCase;
 
 class DefaultControllerTest extends WebTestCase
@@ -19,20 +19,21 @@ class DefaultControllerTest extends WebTestCase
 
     public function testHello()
     {
-        $this->markTestSkipped('Temporarily skipped until UserBundle is readded');
-
         $fixtures = $this->loadFixtureFiles([
             '@AppBundle/DataFixtures/ORM/user.yml'
         ]);
 
         /** @var User $user */
-        $user = $fixtures['user1'];
+        $user = $fixtures['fabien'];
 
         $client = static::createClient();
 
         $crawler = $client->request('GET', '/hello/'.$user->getUsername());
 
         $this->assertStatusCode(200, $client);
-        $this->assertContains(sprintf('Hello, %s!', $user->getName()), $crawler->filter('#container h1')->text());
+        $this->assertContains(
+            sprintf('Hello, %s %s!', $user->getFirstname(), $user->getLastname()),
+            $crawler->filter('#container h1')->text()
+        );
     }
 }

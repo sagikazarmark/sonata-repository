@@ -4,7 +4,9 @@ fos_rest:
     body_listener: true
     format_listener: true
     view:
-        view_response_listener: force
+        # Original value: force
+        # See https://github.com/FriendsOfSymfony/FOSRestBundle/issues/1354
+        view_response_listener: true
     body_converter:
         enabled: true
         validate: true
