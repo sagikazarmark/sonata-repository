@@ -2,7 +2,7 @@
 
 namespace AppBundle\Features\Context;
 
-use AppBundle\Entity\User;
+use AppBundle\Entity\User\User;
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\MinkExtension\Context\MinkContext;
 use Behat\Symfony2Extension\Context\KernelAwareContext;
@@ -13,14 +13,19 @@ final class FeatureContext extends MinkContext implements SnippetAcceptingContex
     use KernelDictionary;
 
     /**
-     * @Given there is a user called :name with the username :username
+     * @Given there is a user called :firstName :lastName with the username :username
      */
-    public function thereIsAUserCalledWithTheUsername($name, $username)
+    public function thereIsAUserCalledWithTheUsername($firstName, $lastName, $username)
     {
         $user = new User();
 
-        $user->setName($name);
+        $user->setFirstname($firstName);
+        $user->setLastname($lastName);
         $user->setUsername($username);
+        $user->setEmail('email@example.com');
+        $user->setPlainPassword('password');
+        $user->setEnabled(true);
+        $user->setLocked(false);
 
         $em = $this->getContainer()->get('doctrine')->getManager();
 

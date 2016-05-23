@@ -6,12 +6,12 @@ Feature: Say hello to users
 
 
     Scenario: Greet Administrator by default
-        Given there is a user called "Administrator" with the username "admin"
+        Given there is a user called "Sir" "Administrator" with the username "admin"
         When I go to "/hello"
-        Then I should see "Hello, Administrator!"
+        Then I should see "Hello, Sir Administrator!"
 
 
     Scenario: Greet Fabien
-        Given there is a user called "Fabien" with the username "fabien"
+        Given there is a user called "Fabien" "Potencier" with the username "fabien"
         When I go to "/hello/fabien"
-        Then I should see "Hello, Fabien!"
+        Then I should see "Hello, Fabien Potencier!"
