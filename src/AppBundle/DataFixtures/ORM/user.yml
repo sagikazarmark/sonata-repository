@@ -8,11 +8,3 @@ AppBundle\Entity\User\User:
         locked: false
         firstname: Admin
         lastname: User
-    fabien:
-        username: fabien
-        email: fabien@symfony.com
-        plainPassword: potencier
-        enabled: true
-        locked: false
-        firstname: Fabien
-        lastname: Potencier

@@ -4,8 +4,7 @@
     <div id="wrapper">
         <div id="container">
             <div id="welcome">
-                <h1>Hello, {{ user.getFirstname() }} {{ user.getLastname() }}!</h1>
-                <img src="{{ asset('bundles/app/img/%s.jpg'|format(user.getUsername())) }}" alt="{{ user.getFirstname() }} {{ user.getLastname() }}">
+                <h1>Hello, {{ user.getFirstname() ~ ' ' ~ user.getLastname() }}!</h1>
             </div>
         </div>
     </div>
