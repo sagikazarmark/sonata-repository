@@ -1,0 +1,15 @@
+sonata_admin:
+    title: Sonata Admin
+    title_logo: /android-chrome-48x48.png
+
+    templates:
+        layout: SonataAdminBundle::layout.html.twig
+
+    dashboard:
+        groups:
+            sonata_user:
+                label_catalogue: SonataUserBundle
+                icon: "<i class='fa fa-users'></i>"
+                items:
+                    - sonata.user.admin.user
+                    - sonata.user.admin.group

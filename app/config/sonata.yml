@@ -1,4 +1,5 @@
 imports:
+    - { resource: sonata/admin.yml }
     - { resource: sonata/block.yml }
     - { resource: sonata/user.yml }
     - { resource: sonata/rest.yml }
