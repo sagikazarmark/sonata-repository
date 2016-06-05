@@ -7,6 +7,14 @@ use JMS\Serializer\Annotation as JMS;
 use Sonata\UserBundle\Entity\BaseUser;
 
 /**
+ * @ORM\AttributeOverrides({
+ *      @ORM\AttributeOverride(name="salt",
+ *          column=@ORM\Column(
+ *              type = "string",
+ *              nullable = true,
+ *          )
+ *      )
+ * })
  * @ORM\Entity
  * @ORM\Table("fos_user_user")
  *
@@ -29,4 +37,23 @@ class User extends BaseUser
      * @JMS\XmlAttributeMap
      */
     protected $id;
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        $this->salt = null;
+    }
+
+    /**
+     * Since PHP 7 password functions does not support custom salts.
+     *
+     * By manually overriding this method we prevent the salt option from being passed to password functions.
+     *
+     * @return null
+     */
+    public function getSalt()
+    {
+        return null;
+    }
 }
