@@ -28,7 +28,6 @@ security:
             security: false
 
         admin:
-            http_basic: ~
             pattern: /admin(.*)
             context: user
             form_login:
