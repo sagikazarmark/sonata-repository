@@ -3,9 +3,8 @@
 set -e
 
 bin/console cache:clear
-chmod -R 777 var/cache/ var/logs/ var/sessions/
-rm -rf public/*
-cp -r web/* public/
+chmod -R 777 var/cache/ var/logs/
+cp -r public/* web/
 
 case "$1" in
     "php-fpm")

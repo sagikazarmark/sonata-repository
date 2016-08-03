@@ -33,7 +33,7 @@
         "liip/functional-test-bundle": "^1.5",
         "hautelook/alice-bundle": "^1.2",
         "symfony/phpunit-bridge": "^2.8 || ^3.0",
-        "phpunit/phpunit": "^4.8|^5.2",
+        "phpunit/phpunit": "^4.8 || ^5.2",
         "phpspec/phpspec": "^2.4",
         "henrikbjorn/phpspec-code-coverage": "^2.0",
         "behat/behat": "^3.1",
@@ -71,12 +71,9 @@
         "symfony-var-dir": "var",
         "symfony-web-dir": "web",
         "symfony-tests-dir": "tests",
-        "symfony-assets-install": "hard",
+        "symfony-assets-install": "relative",
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
-        },
-        "branch-alias": {
-            "dev-master": "2.8-dev"
         }
     },
     "prefer-stable": true,
