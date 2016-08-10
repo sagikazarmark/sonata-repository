@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "cocur/slugify",
-            "version": "v2.2",
+            "version": "v2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cocur/slugify.git",
-                "reference": "13c1d3b2e602822c47a7ac62f9d409e1a2b76113"
+                "reference": "57a00e06a382928e350cc7bbb13b19f1b8f4e73a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cocur/slugify/zipball/13c1d3b2e602822c47a7ac62f9d409e1a2b76113",
-                "reference": "13c1d3b2e602822c47a7ac62f9d409e1a2b76113",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/57a00e06a382928e350cc7bbb13b19f1b8f4e73a",
+                "reference": "57a00e06a382928e350cc7bbb13b19f1b8f4e73a",
                 "shasum": ""
             },
             "require": {
@@ -69,7 +69,7 @@
                 "slug",
                 "slugify"
             ],
-            "time": "2016-07-10 13:06:05"
+            "time": "2016-08-09 20:10:17"
         },
         {
             "name": "doctrine/annotations",
@@ -421,16 +421,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "1.6.3",
+            "version": "1.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "fd51907c6c76acaa8a5234822a4f901c1500afc1"
+                "reference": "dd40b0a7fb16658cda9def9786992b8df8a49be7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/fd51907c6c76acaa8a5234822a4f901c1500afc1",
-                "reference": "fd51907c6c76acaa8a5234822a4f901c1500afc1",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/dd40b0a7fb16658cda9def9786992b8df8a49be7",
+                "reference": "dd40b0a7fb16658cda9def9786992b8df8a49be7",
                 "shasum": ""
             },
             "require": {
@@ -439,6 +439,7 @@
                 "jdorn/sql-formatter": "~1.1",
                 "php": ">=5.3.2",
                 "symfony/console": "~2.3|~3.0",
+                "symfony/dependency-injection": "~2.3|~3.0",
                 "symfony/doctrine-bridge": "~2.2|~3.0",
                 "symfony/framework-bundle": "~2.3|~3.0"
             },
@@ -497,7 +498,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2016-04-21 19:55:56"
+            "time": "2016-08-10 15:35:22"
         },
         {
             "name": "doctrine/doctrine-cache-bundle",
@@ -2077,16 +2078,16 @@
         },
         {
             "name": "phpcollection/phpcollection",
-            "version": "0.4.0",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-collection.git",
-                "reference": "b8bf55a0a929ca43b01232b36719f176f86c7e83"
+                "reference": "f2bcff45c0da7c27991bbc1f90f47c4b7fb434a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-collection/zipball/b8bf55a0a929ca43b01232b36719f176f86c7e83",
-                "reference": "b8bf55a0a929ca43b01232b36719f176f86c7e83",
+                "url": "https://api.github.com/repos/schmittjoh/php-collection/zipball/f2bcff45c0da7c27991bbc1f90f47c4b7fb434a6",
+                "reference": "f2bcff45c0da7c27991bbc1f90f47c4b7fb434a6",
                 "shasum": ""
             },
             "require": {
@@ -2095,7 +2096,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.3-dev"
+                    "dev-master": "0.4-dev"
                 }
             },
             "autoload": {
@@ -2109,10 +2110,8 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "General-Purpose Collection Library for PHP",
@@ -2123,7 +2122,7 @@
                 "sequence",
                 "set"
             ],
-            "time": "2014-03-11 13:46:42"
+            "time": "2015-05-17 12:39:23"
         },
         {
             "name": "phpoption/phpoption",
@@ -6605,28 +6604,29 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "30eed06dd6bc88410a4ff7f77b6d22f3ce13dbde"
+                "reference": "bb2d123231c095735130cc8f6d31385a44c7b308"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/30eed06dd6bc88410a4ff7f77b6d22f3ce13dbde",
-                "reference": "30eed06dd6bc88410a4ff7f77b6d22f3ce13dbde",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/bb2d123231c095735130cc8f6d31385a44c7b308",
+                "reference": "bb2d123231c095735130cc8f6d31385a44c7b308",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": "^5.3.3|^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.6"
+                "phpunit/phpunit": "^4.6",
+                "sebastian/version": "^1.0.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -6650,7 +6650,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2015-08-24 13:29:44"
+            "time": "2016-08-09 15:02:57"
         }
     ],
     "aliases": [],
