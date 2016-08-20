@@ -49,11 +49,9 @@ class User extends BaseUser
      * Since PHP 7 password functions does not support custom salts.
      *
      * By manually overriding this method we prevent the salt option from being passed to password functions.
-     *
-     * @return null
      */
     public function getSalt()
     {
-        return null;
+        return;
     }
 }
