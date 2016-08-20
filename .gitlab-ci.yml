@@ -49,7 +49,7 @@ frontend:
         GULP_VERSION: 1.2.2
     script:
         - npm install -g gulp-cli@$GULP_VERSION --silent
-        - gulp --env production
+        - make GULPOPTS="--env production" frontend
     dependencies:
         - npm
         - bower
@@ -73,7 +73,7 @@ test:
         - "curl -H \"Accept: text/plain\" https://security.sensiolabs.org/check_lock -F lock=@composer.lock"
         - composer dump-autoload
         - composer run-script post-install-cmd
-        - make TEST=true setup
+        - make setup
         - make test
     dependencies:
         - composer
