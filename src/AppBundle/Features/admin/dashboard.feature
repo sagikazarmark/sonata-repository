@@ -1,3 +1,4 @@
+@integration
 Feature: Access dashboard
     In order to maintain the application
     As an administrator

@@ -61,6 +61,7 @@ else
 	vendor/bin/phpspec run
 	vendor/bin/phpunit
 endif
-	vendor/bin/behat
+	vendor/bin/behat --tags "~@integration"
+	vendor/bin/behat --tags "@integration"
 
 .PHONY: help clear deps setup frontend test
