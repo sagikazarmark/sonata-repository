@@ -2423,16 +2423,16 @@
         },
         {
             "name": "sonata-project/admin-bundle",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "59e17c9d277b16c467549f86e67d0c50b3452383"
+                "reference": "280c412dd94ce3cf2251658b82047be5d1d22f94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/59e17c9d277b16c467549f86e67d0c50b3452383",
-                "reference": "59e17c9d277b16c467549f86e67d0c50b3452383",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/280c412dd94ce3cf2251658b82047be5d1d22f94",
+                "reference": "280c412dd94ce3cf2251658b82047be5d1d22f94",
                 "shasum": ""
             },
             "require": {
@@ -2516,7 +2516,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2016-08-29 08:29:59"
+            "time": "2016-09-01 14:58:27"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -2655,16 +2655,16 @@
         },
         {
             "name": "sonata-project/core-bundle",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
-                "reference": "b095c31bd6d0561dd9c090670fb94a5572d66537"
+                "reference": "d0519eb15529a1cbef326e8eea9982b59ad162d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/b095c31bd6d0561dd9c090670fb94a5572d66537",
-                "reference": "b095c31bd6d0561dd9c090670fb94a5572d66537",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/d0519eb15529a1cbef326e8eea9982b59ad162d7",
+                "reference": "d0519eb15529a1cbef326e8eea9982b59ad162d7",
                 "shasum": ""
             },
             "require": {
@@ -2726,7 +2726,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2016-08-25 09:36:27"
+            "time": "2016-08-30 14:59:31"
         },
         {
             "name": "sonata-project/datagrid-bundle",
