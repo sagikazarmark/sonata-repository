@@ -3,3 +3,8 @@ imports:
     - { resource: sonata/block.yml }
     - { resource: sonata/user.yml }
     - { resource: sonata/rest.yml }
+
+doctrine:
+    dbal:
+        types:
+            json: Sonata\Doctrine\Types\JsonType
